@@ -101,17 +101,6 @@ GET /api/players?position=Forward
 }
 ```
 
-## Scripts
-
-```json
-{
-  "build": "tsc --noEmit && tsup src/server.ts",
-  "dist": "npm run build",
-  "start:dev": "tsx --env-file=.env src/server.ts",
-  "start:watch": "tsx watch --env-file=.env src/server.ts",
-  "start:dist": "npm run dist && node dist/server.js"
-}
-```
 
 ## Estrutura
 
